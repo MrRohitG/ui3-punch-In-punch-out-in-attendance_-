@@ -151,7 +151,7 @@ class _atted1State extends State<Atted1> {
                                   child: Text(
                                     " ${DateFormat.d().format(selectedDate)} ${DateFormat.E().format(selectedDate)}",
                                     style: GoogleFonts.poppins(
-                                        fontSize: 10,
+                                        fontSize: 12,
                                         color: Colors.black,
                                         fontWeight: FontWeight.w400),
                                   ),
@@ -168,7 +168,7 @@ class _atted1State extends State<Atted1> {
                                     ),
                                     Text(
                                       " ${DateFormat.jm().format(DateTime.now())}",
-                                      style: GoogleFonts.poppins(fontSize: 10),
+                                      style: GoogleFonts.poppins(fontSize: 12),
                                     ),
                                     Spacer(),
                                     Icon(
@@ -179,7 +179,7 @@ class _atted1State extends State<Atted1> {
                                     Text(
                                       " ${item.punchOut}",
                                       style: GoogleFonts.poppins(
-                                          fontSize: 10,
+                                          fontSize: 12,
                                           color: Colors.black,
                                           fontWeight: FontWeight.w400),
                                     ),
@@ -207,7 +207,7 @@ class _atted1State extends State<Atted1> {
                                   child: Text(
                                     " ${item.note}",
                                     style: GoogleFonts.poppins(
-                                      fontSize: 10,
+                                      fontSize: 12,
                                       fontWeight: FontWeight.w300,
                                     ),
                                     selectionColor: Colors.black54,
@@ -227,7 +227,7 @@ class _atted1State extends State<Atted1> {
 
                 is_punched
                     ? Container(
-                        height: 170,
+                        height: 180,
                         decoration: BoxDecoration(
                           color: Colors.white,
                           shape: BoxShape.rectangle,
@@ -263,15 +263,13 @@ class _atted1State extends State<Atted1> {
                                   padding: const EdgeInsets.all(6),
                                   child: Row(
                                     children: [
-                                       Text(
-                                          "${DateFormat.EEEE().format(selectedDate)}   ${selectedDate.day}-${selectedDate.month}-${selectedDate.year}",
-                                          style: GoogleFonts.poppins(
-                                            fontSize: 12,
-                                            color: Colors.grey,
-                                          ),
+                                      Text(
+                                        "${DateFormat.EEEE().format(selectedDate)}   ${selectedDate.day}-${selectedDate.month}-${selectedDate.year}",
+                                        style: GoogleFonts.poppins(
+                                          fontSize: 12,
+                                          color: Colors.grey,
                                         ),
-                                      
-                                     
+                                      ),
                                     ],
                                   ),
                                 ),
@@ -289,14 +287,13 @@ class _atted1State extends State<Atted1> {
                                 maxLength: 50,
 
                                 decoration: InputDecoration(
-                                  // border: OutlineInputBorder(
-                                  //   borderRadius: BorderRadius.circular(10),
-                                  //   borderSide: BorderSide(
-                                  //     color: Color.fromARGB(255, 221, 40, 40),
-                                  //     width: 17,
-                                  //   ),
-                                  // ),
-
+                                  border: OutlineInputBorder(
+                                    borderRadius: BorderRadius.circular(10),
+                                    borderSide: BorderSide(
+                                      color: Color.fromARGB(255, 221, 40, 40),
+                                      width: 17,
+                                    ),
+                                  ),
                                   enabledBorder: OutlineInputBorder(
                                     borderRadius: BorderRadius.circular(10),
                                     borderSide: BorderSide(
@@ -313,7 +310,7 @@ class _atted1State extends State<Atted1> {
                                   ),
                                   labelText: 'Description',
                                   labelStyle: GoogleFonts.poppins(
-                                    fontSize: 10,
+                                    fontSize: 12,
                                     color: Colors.black,
                                     fontWeight: FontWeight.w300,
                                   ),
@@ -321,7 +318,7 @@ class _atted1State extends State<Atted1> {
                               ),
                             ),
                             SizedBox(
-                              height: 20,
+                              height: 12,
                             ),
                             OutlinedButton(
                               onPressed: () {},
@@ -338,7 +335,7 @@ class _atted1State extends State<Atted1> {
                               child: Text(
                                 'Punch Out',
                                 style: GoogleFonts.poppins(
-                                    fontSize: 10, color: Colors.red),
+                                    fontSize: 12, color: Colors.red),
                               ),
                             ),
                           ],
@@ -384,12 +381,15 @@ class _atted1State extends State<Atted1> {
                                         SizedBox(width: 5),
                                       ],
                                     ),
+                                    SizedBox(
+                                      height: 5,
+                                    ),
                                     Text(
-                                      "You are about to enter the office",
+                                      "You'r about to enter the office",
                                       style: GoogleFonts.poppins(
                                         fontSize: 14,
                                         color: Colors.black,
-                                        fontWeight: FontWeight.w400,
+                                        fontWeight: FontWeight.w500,
                                       ),
                                     ),
                                   ],
@@ -414,7 +414,7 @@ class _atted1State extends State<Atted1> {
                                 child: Text(
                                   'Punch In',
                                   style: GoogleFonts.poppins(
-                                      fontSize: 10, color: Colors.red),
+                                      fontSize: 12, color: Colors.red),
                                 ),
                               ),
                               SizedBox(width: 20),
