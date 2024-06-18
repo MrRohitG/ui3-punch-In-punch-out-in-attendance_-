@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ui3/attend1.dart';
+import 'package:ui3/attend1_optimised.dart';
 import 'package:ui3/homedashboard.dart';
 
 void main() {
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const MainDash(),
+      home: const AttedOptimised1(),
     );
   }
 }

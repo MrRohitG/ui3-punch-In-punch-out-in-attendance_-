@@ -51,16 +51,19 @@ class _atted1State extends State<Atted1> {
   }
 
   void insertData() {
-    List<AttedBlock> tempItems = List.generate(10, (index) {
-      return AttedBlock(
-        // date: "${DateFormat.MMM().format(selectedDate)}-${selectedDate.year}",
-        date:
-            "${DateFormat.d().format(selectedDate)} ${DateFormat.E().format(selectedDate)}",
-        punchIn: "10:05 AM",
-        punchOut: "06:10 PM",
-        note: "Many desktop publishing packages and web Page",
+    List<AttedBlock> tempItems = [];
+
+    for (int i = 0; i < 10; i++) {
+      tempItems.add(
+        AttedBlock(
+          date:
+              "${DateFormat.d().format(selectedDate)} ${DateFormat.E().format(selectedDate)}",
+          punchIn: "10:05 AM",
+          punchOut: "06:10 PM",
+          note: "Many desktop publishing packages and web Page",
+        ),
       );
-    });
+    }
 
     setState(() {
       items = tempItems;
